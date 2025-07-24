@@ -59,7 +59,7 @@
 		</ContentWithMedia>
 	{/each}
 		<div class="w-full flex flex-col items-center bg-color2-light dark:bg-color2 p-6">
-			<h2 class="text-center font-bold text-2xl mb-4">ShefOS является основой для многих других популярных дистрибутивов</h2>
+			<h2 class="text-center font-bold text-2xl mb-8">ShefOS является основой для многих других популярных дистрибутивов</h2>
 			<ImageComponent
 				src="/shefostree.jpg"
 				alt="ShefOS Tree"
@@ -68,7 +68,7 @@
 		</div>
 		<div class="w-full flex flex-col items-center px-4">
 			<h2 class="text-center font-bold text-2xl mb-4">Экосистема ShefOS</h2>
-			<h4 class="text-center text-xl mb-4">Наши разработчки и сообщество упорно работали над портированием ShefOS на различные устройства</h4>
+			<h4 class="text-center text-xl mb-16">Наши разработчки и сообщество упорно работали над портированием ShefOS на различные устройства</h4>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 				{#each ecosystem_images as image, i}
