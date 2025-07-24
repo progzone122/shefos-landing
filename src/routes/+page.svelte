@@ -114,7 +114,7 @@
 		<div class="p-6 w-[90%] md:w-[60%]  bg-color2 rounded-2xl shadow-md shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 5</h3>
 			<p class="mb-6">Перезагрузитесь в UEFI/BIOS или бутлоадер (в зависимости от устройства) и используйте функцию "Сменить обои" для установки ShefOS на ваше устройство</p>
-			<PlayerComponent src="/porting.mp4" className="w-full h-[40em] rounded-xl" />
+			<PlayerComponent src="/porting.mp4" className="w-full h-[100vw] lg:h-[40em] rounded-xl" />
 		</div>
 	</div>
 	<div class="w-full px-8 flex flex-col items-center bg-color2 p-8">
