@@ -42,7 +42,7 @@
 		>
 			<div slot="media">
 				{#if item.type === 'image'}
-					<div use:useInView class="w-full h-full animate-slide-in">
+					<div use:useInView class="w-full h-full animate-slide-in transition-transform duration-100 ease-in-out hover:scale-95">
 						<ImageComponent
 							src={item.media}
 							alt={item.header}
