@@ -6,6 +6,7 @@
 	import { useInView } from '$lib/useInView.ts';
 
 	import ImageComponent from '../components/ImageComponent.svelte';
+	import TableVersus from '../components/TableVersus.svelte';
 
 	const ecosystem_images = [
 		'/community/diablosat-setup.jpg',
@@ -96,81 +97,10 @@
 		<h2 use:useInView class="animate-slide-in mb-8 text-center text-2xl font-bold">
 			Сравнение с отстающими
 		</h2>
-		<div use:useInView class="animate-slide-in w-[90%] md:w-[60%]">
-			<table
-				class="w-full table-auto border-collapse overflow-hidden rounded-xl text-center shadow-lg dark:shadow-black"
-			>
-				<thead>
-					<tr class="bg-color2-light text-xl font-bold dark:bg-color2">
-						<th class="px-4 py-3"> </th>
-						<th class="px-4 py-3">Arch Linux</th>
-						<th class="px-4 py-3">CachyOS</th>
-						<th class="px-4 py-3">ShefOS</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Вес образа</td>
-						<td class="px-4 py-3">921 600 КилоБАЙТ</td>
-						<td class="px-4 py-3">2 670 016 КилоБАЙТ</td>
-						<td class="px-4 py-3">320 КилоГРАММ</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Кросс-платформенность</td>
-						<td class="px-4 py-3">только x64</td>
-						<td class="px-4 py-3">только x64</td>
-						<td class="px-4 py-3">Работает на любых мощностях</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Безопасность</td>
-						<td class="px-4 py-3">Systemd-exploited</td>
-						<td class="px-4 py-3">Скомпилирован с GCC-эксплоитом</td>
-						<td class="px-4 py-3">Максимально безопасен</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Медийная известность</td>
-						<td class="px-4 py-3">Топ 1 для долбоёбов</td>
-						<td class="px-4 py-3">noname</td>
-						<td class="px-4 py-3">Его хочет каждый</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Обои</td>
-						<td class="px-4 py-3">Нет</td>
-						<td class="px-4 py-3">Нет</td>
-						<td class="px-4 py-3">Нескучные 320-килограммовые</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Экосистема</td>
-						<td class="px-4 py-3">Минимальная</td>
-						<td class="px-4 py-3">Минимальная</td>
-						<td class="px-4 py-3">От холодильника Haier до суперкомпьютера MOSHNOSTI</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Предустановленые пакеты</td>
-						<td class="px-4 py-3">Базовые</td>
-						<td class="px-4 py-3">Основные</td>
-						<td class="px-4 py-3">1660 пакетов общей массой 320 кг</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Оптимизации</td>
-						<td class="px-4 py-3">Никакие</td>
-						<td class="px-4 py-3">Перемудрили</td>
-						<td class="px-4 py-3">Уровень тюнинг-ателье©</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Система инициализации</td>
-						<td class="px-4 py-3">systemd exploit</td>
-						<td class="px-4 py-3">systemd exploit</td>
-						<td class="px-4 py-3">Собственная разработка 320KGinit</td>
-					</tr>
-					<tr class="bg-white text-lg dark:bg-gray-800">
-						<td class="px-4 py-3">Стабильность</td>
-						<td class="px-4 py-3">Ужасная</td>
-						<td class="px-4 py-3">Ужасная</td>
-						<td class="px-4 py-3">Эталон стабильности</td>
-					</tr>
-				</tbody>
-			</table>
+		<div use:useInView class="animate-slide-in w-full overflow-x-auto">
+			<div class="w-[90%] min-w-[600px] md:w-[60%] mx-auto">
+				<TableVersus />
+			</div>
 		</div>
 	</div>
 	<!--  -->
