@@ -13,7 +13,7 @@
 </script>
 
 <!-- Маленькое изображение-превью -->
-<div class={`inline-block ${className}`}>
+<div class={`inline-block ${className} transition-transform duration-200 ease-in-out hover:scale-95`}>
 	<img
 		src={src}
 		alt={alt}
