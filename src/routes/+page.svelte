@@ -92,7 +92,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="p-6 w-[90%] md:w-[60%]  bg-color2-light dark:bg-color2 rounded-2xl shadow-md shadow-md dark:shadow-black">
+		<div class="p-6 w-[90%] md:w-[60%]  bg-color2-light dark:bg-color2 rounded-2xl shadow-md dark:shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 2</h3>
 			<p>Просчитайте вес ShefOS для вашего устройства по формуле:</p>
 			<h4 class="text-center text-orange-400 font-bold">РАЗМЕР_ДИСКА + КОЛИЧЕСТВО_ОЗУ * 320 + 42 = ?KG</h4>
@@ -117,7 +117,7 @@
 			<PlayerComponent src="/porting.mp4" className="w-full h-[100vw] lg:h-[40em] rounded-xl" />
 		</div>
 	</div>
-	<div class="w-full px-8 flex flex-col items-center bg-color2-light dark:bg-colo p-8">
+	<div class="w-full px-8 flex flex-col items-center bg-color2-light dark:bg-color2 p-8">
 		<h2 class="text-center font-bold text-2xl mb-2">Техподдержка</h2>
 		<p class="mb-4">Если у вас возникнут вопросы или проблемы, пожалуйста, обратитесь в нашу службу технической поддержки</p>
 		<a href="https://linuxshef.code.blog/contact/" target="_blank"><button type="button" class="btn preset-filled-primary-500">Связаться</button></a>
