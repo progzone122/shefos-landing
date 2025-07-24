@@ -231,11 +231,11 @@
                 className="w-[100%] lg:w-[65em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black"
             />
             <h3 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
-                Haier. Линейка холодильников HB25
+                Lenovo. Линейка ноутбуков Thinkpad
       		</h3>
             <ImageComponent
                 src="/companies/thinkpad_sup.png"
-                className="w-[100%] lg:w-[60em] h-[50vw] lg:h-[40em] shadow-lg dark:shadow-black"
+                className="w-[100%] lg:w-[60em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black"
             />
             <h3 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
                 Haier. Линейка холодильников HB25
