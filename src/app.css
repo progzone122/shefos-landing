@@ -13,3 +13,12 @@
     --color-color2-light: #e9f4fa;
     --color-bg: #121212;
 }
+
+@layer utilities {
+    .animate-slide-in {
+        @apply opacity-0 translate-y-8 transition-all duration-700;
+    }
+    .in-view.animate-slide-in {
+        @apply opacity-100 translate-y-0;
+    }
+}
