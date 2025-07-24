@@ -1,4 +1,6 @@
 <script>
+	import Portal from "svelte-portal";
+
 	export let src = '';
 	export let alt = '';
 	export let className = '';
@@ -10,73 +12,28 @@
 	}
 </script>
 
-<style>
-    .image-container {
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 1rem;
-        cursor: pointer;
-        user-select: none;
-
-        /* По умолчанию размер под изображение */
-        display: inline-block;
-        background-size: cover;
-        /* Чтобы было место по высоте, задаём min-height */
-        min-height: 150px;
-        min-width: 150px;
-    }
-
-    .zoom-button {
-        position: absolute;
-        bottom: 0.5rem;
-        right: 0.5rem;
-        background: rgba(31, 41, 55, 0.75);
-        color: white;
-        padding: 0.3rem 0.8rem;
-        border-radius: 0.375rem;
-        font-weight: 600;
-        backdrop-filter: blur(4px);
-        transition: background-color 0.2s ease;
-        user-select: none;
-    }
-
-    .zoom-button:hover {
-        background: rgba(31, 41, 55, 0.95);
-    }
-
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0,0,0,0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    .zoomed-image {
-        max-width: 90vw;
-        max-height: 90vh;
-        border-radius: 1rem;
-        box-shadow: 0 0 20px black;
-    }
-</style>
-
-<div
-	class={`image-container flex justify-center items-center transition-transform duration-300 hover:scale-95 ${className}`}
-	style="background-image: url({src});"
-	aria-label={alt}
-	role="img"
-	on:click|stopPropagation={toggleZoom}
->
+<!-- Маленькое изображение-превью -->
+<div class={`inline-block ${className}`}>
+	<img
+		src={src}
+		alt={alt}
+		class="rounded-xl cursor-pointer object-cover w-full h-full"
+		on:click={toggleZoom}
+	/>
 </div>
 
+<!-- Увеличенное изображение поверх всего, фиксировано к экрану -->
 {#if isZoomed}
-	<div class="overlay" on:click={toggleZoom}>
-		<img src={src} alt={alt} class="zoomed-image" />
-	</div>
+	<Portal>
+		<div
+			class="fixed inset-0 z-[9999] bg-black/70 flex items-center justify-center"
+			on:click={toggleZoom}
+		>
+			<img
+				src={src}
+				alt={alt}
+				class="max-w-[90vw] max-h-[90vh] object-contain rounded-xl shadow-2xl"
+			/>
+		</div>
+	</Portal>
 {/if}
