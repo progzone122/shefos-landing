@@ -119,7 +119,7 @@
 	</div>
 	<div class="w-full px-8 flex flex-col items-center bg-color2-light dark:bg-color2 p-8">
 		<h2 class="text-center font-bold text-2xl mb-2">Техподдержка</h2>
-		<p class="mb-4">Если у вас возникнут вопросы или проблемы, пожалуйста, обратитесь в нашу службу технической поддержки</p>
+		<p class="text-center text-xl mb-4">Если у вас возникнут вопросы или проблемы, пожалуйста, обратитесь в нашу службу технической поддержки</p>
 		<a href="https://linuxshef.code.blog/contact/" target="_blank"><button type="button" class="btn preset-filled-primary-500">Связаться</button></a>
 
 		<div class="w-full flex justify-center gap-4 mt-8">
