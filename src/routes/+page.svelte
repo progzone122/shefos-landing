@@ -82,27 +82,27 @@
 
 	<div class="w-full px-8 flex flex-col gap-8 items-center">
 		<h2 class="text-center font-bold text-2xl mb-4">Портирование ShefOS на ваше устройство</h2>
-		<div class="p-6 w-[60%] bg-color2 rounded-2xl shadow-md shadow-black">
+		<div class="p-6 w-[90%] md:w-[60%] bg-color2 rounded-2xl shadow-md shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 1</h3>
 			<p>Скачайте <a href="https://t.me/aniship/929" target="_blank">унифицированный GSI образ</a> с расширением .jpg</p>
 			<div class="space-y-4">
-				<div class="flex gap-4 mt-4">
+				<div class="flex flex-col md:flex-row gap-4 mt-4">
 					<a href="https://t.me/aniship/927" target="_blank"><button type="button" class="btn preset-filled-secondary-500">GSI Desktop</button></a>
 					<a href="https://t.me/aniship/929" target="_blank"><button type="button" class="btn preset-filled-primary-500">GSI Mobile</button></a>
 				</div>
 			</div>
 		</div>
-		<div class="p-6 w-[60%] bg-color2 rounded-2xl shadow-md shadow-black">
+		<div class="p-6 w-[90%] md:w-[60%]  bg-color2 rounded-2xl shadow-md shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 2</h3>
 			<p>Просчитайте вес ShefOS для вашего устройства по формуле:</p>
 			<h4 class="text-center text-orange-400 font-bold">РАЗМЕР_ДИСКА + КОЛИЧЕСТВО_ОЗУ * 320 + 42 = ?KG</h4>
 		</div>
-		<div class="p-6 w-[60%] bg-color2 rounded-2xl shadow-md shadow-black">
+		<div class="p-6 w-[90%] md:w-[60%]  bg-color2 rounded-2xl shadow-md shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 3</h3>
 			<p>Переведите киллограмы в гигабайты по формуле:</p>
 			<h4 class="text-center text-orange-400 font-bold">(ВЕС_SHEFOS * 320 - 42) * 2 = ?GB</h4>
 		</div>
-		<div class="p-6 w-[60%] bg-color2 rounded-2xl shadow-md shadow-black">
+		<div class="p-6 w-[90%] md:w-[60%]  bg-color2 rounded-2xl shadow-md shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 4</h3>
 			<p>С помощью утилиты ffmpeg создайте образ ShefOS для вашего устройства (Вместо GB - подставьте свое значение):</p>
 			<div class="w-full bg-black p-4 rounded-2xl mt-4">
@@ -111,7 +111,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="p-6 w-[60%] bg-color2 rounded-2xl shadow-md shadow-black">
+		<div class="p-6 w-[90%] md:w-[60%]  bg-color2 rounded-2xl shadow-md shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 5</h3>
 			<p class="mb-6">Перезагрузитесь в UEFI/BIOS или бутлоадер (в зависимости от устройства) и используйте функцию "Сменить обои" для установки ShefOS на ваше устройство</p>
 			<PlayerComponent src="/porting.mp4" className="w-full h-[40em] rounded-xl" />
