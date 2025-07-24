@@ -81,7 +81,7 @@
 		</div>
 
 	<div class="w-full px-8 flex flex-col gap-8 items-center">
-		<h2 class="text-center font-bold text-2xl mb-4 text-black">Портирование ShefOS на ваше устройство</h2>
+		<h2 class="text-center font-bold text-2xl mb-4">Портирование ShefOS на ваше устройство</h2>
 		<div class="p-6 w-[90%] md:w-[60%] bg-color2-light dark:bg-color2 rounded-2xl shadow-md dark:shadow-black">
 			<h3 class="font-bold text-2xl">Шаг 1</h3>
 			<p>Скачайте <a href="https://t.me/aniship/929" target="_blank">унифицированный GSI образ</a> с расширением .jpg</p>
