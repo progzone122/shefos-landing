@@ -98,7 +98,7 @@
 			Сравнение с отстающими
 		</h2>
 		<div use:useInView class="animate-slide-in w-full overflow-x-auto">
-			<div class="w-[90%] min-w-[600px] md:w-[60%] mx-auto">
+			<div class="w-[90%] min-w-[600px] md:w-[80%] mx-auto">
 				<TableVersus />
 			</div>
 		</div>
