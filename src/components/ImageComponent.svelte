@@ -67,14 +67,12 @@
 </style>
 
 <div
-	class={`image-container ${className}`}
+	class={`image-container flex justify-center items-center ${className}`}
 	style="background-image: url({src});"
 	aria-label={alt}
 	role="img"
+	on:click|stopPropagation={toggleZoom}
 >
-	<button class="zoom-button" on:click|stopPropagation={toggleZoom}>
-		{isZoomed ? 'Закрыть' : 'Увеличить'}
-	</button>
 </div>
 
 {#if isZoomed}
