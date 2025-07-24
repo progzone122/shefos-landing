@@ -67,7 +67,7 @@
 </style>
 
 <div
-	class={`image-container flex justify-center items-center ${className}`}
+	class={`image-container flex justify-center items-center transition-transform duration-300 hover:scale-95 ${className}`}
 	style="background-image: url({src});"
 	aria-label={alt}
 	role="img"
