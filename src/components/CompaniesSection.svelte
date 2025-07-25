@@ -16,12 +16,12 @@
 		'Haier. Линейка холодильников HB25'
 	];
 
-	const companyClasses = [
-		'w-[100%] lg:w-[65em] h-[50vw] lg:h-[32em] shadow-lg dark:shadow-black',
-		'w-[100%] lg:w-[65em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black',
-		'w-[100%] lg:w-[60em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black',
-		'w-[100%] lg:w-[93em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black'
-	];
+	// const companyClasses = [
+	// 	'w-[100%] lg:w-[65em] h-[50vw] lg:h-[32em] shadow-lg dark:shadow-black',
+	// 	'w-[100%] lg:w-[65em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black',
+	// 	'w-[100%] lg:w-[60em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black',
+	// 	'w-[100%] lg:w-[93em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black'
+	// ];
 </script>
 
 <div class="flex w-full flex-col items-center px-8">
@@ -33,7 +33,7 @@
 			<h3 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
 				{companyNames[i]}
 			</h3>
-			<ImageComponent src={image} alt={companyNames[i]} className={companyClasses[i]} />
+			<ImageComponent src={image} alt={companyNames[i]} className="w-[100%] lg:w-[65em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black" />
 		{/each}
 	</div>
 </div>
