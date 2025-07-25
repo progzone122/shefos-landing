@@ -7,6 +7,7 @@
 
 	import ImageComponent from '../components/ImageComponent.svelte';
 	import TableVersus from '../components/TableVersus.svelte';
+	import CompaniesSection from '../components/CompaniesSection.svelte';
 
 	const ecosystem_images = [
 		'/community/diablosat-setup.jpg',
@@ -46,6 +47,7 @@
 		use:useInView
 		class="animate-slide-in mt-20 w-[90%] rounded-xl shadow-lg md:w-[60%] dark:shadow-black"
 		src="/screenshot1.jpg"
+		alt="ShefOS 320KG screenshot"
 	/>
 </div>
 
@@ -98,7 +100,7 @@
 			Сравнение с отстающими
 		</h2>
 		<div use:useInView class="animate-slide-in w-full overflow-x-auto">
-			<div class="w-[90%] min-w-[600px] md:w-[80%] mx-auto">
+			<div class="mx-auto w-[90%] min-w-[600px] md:w-[80%]">
 				<TableVersus />
 			</div>
 		</div>
@@ -211,42 +213,8 @@
 		</div>
 	</div>
 
-	<div class="flex w-full flex-col items-center px-8">
-		<h2 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
-		    Компании, сделавшие свой выбор в пользу ShefOS
-		</h2>
-		<div class="mt-8 flex w-full flex-col items-center gap-4">
-            <h3 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
-          		    Google. Pixel Watch 3
-    		</h3>
-			<ImageComponent
-				src="/companies/google_sup.png"
-				className="w-[100%] lg:w-[65em] h-[50vw] lg:h-[32em] shadow-lg dark:shadow-black"
-			/>
-			<h3 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
-          		    Apple. Macbook, iMac
-    		</h3>
-            <ImageComponent
-                src="/companies/apple_sup.png"
-                className="w-[100%] lg:w-[65em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black"
-            />
-            <h3 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
-                Lenovo. Линейка ноутбуков Thinkpad
-      		</h3>
-            <ImageComponent
-                src="/companies/thinkpad_sup.png"
-                className="w-[100%] lg:w-[60em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black"
-            />
-            <h3 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
-                Haier. Линейка холодильников HB25
-      		</h3>
-            <ImageComponent
-                src="/companies/haier_sup.png"
-                className="w-[100%] lg:w-[93em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black"
-            />
-		</div>
-	</div>
-	
+	<CompaniesSection />
+
 	<div class="flex w-full flex-col items-center px-8">
 		<h2 use:useInView class="animate-slide-in mb-2 text-center text-2xl font-bold">
 			Спасибо контрибьютерам за их вклад в проект!
