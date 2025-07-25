@@ -15,13 +15,6 @@
 		'Lenovo. Линейка ноутбуков Thinkpad',
 		'Haier. Линейка холодильников HB25'
 	];
-
-	// const companyClasses = [
-	// 	'w-[100%] lg:w-[65em] h-[50vw] lg:h-[32em] shadow-lg dark:shadow-black',
-	// 	'w-[100%] lg:w-[65em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black',
-	// 	'w-[100%] lg:w-[60em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black',
-	// 	'w-[100%] lg:w-[93em] h-[50vw] lg:h-[50em] shadow-lg dark:shadow-black'
-	// ];
 </script>
 
 <div class="flex w-full flex-col items-center px-8">
