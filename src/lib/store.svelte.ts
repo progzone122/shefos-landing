@@ -10,8 +10,8 @@ export const contentState = $state<Content[]>([
 	{
 		header: "Самый легкий дистрибутив",
 		text: "Система занимает всего лишь 0.1GB, а все остальное место в образе выделено под критическую зависимость PINGVIN 320KG",
-		type: "image",
-		media: "/pingvin320kg.jpg"
+		type: "video",
+		media: "/hranishefos.mp4"
 	},
 	{
 		header: "Дополнительная ОЗУ",
